@@ -1,22 +1,16 @@
-A library for Dart developers.
+Dart版网易云音乐接口，使用Dio进行请求，CookieJar管理Cookie数据
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+> 接口来源于 [Binaryify/NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)，其接口文档为[https://binaryify.github.io/NeteaseCloudMusicApi](https://binaryify.github.io/NeteaseCloudMusicApi)
 
-## Usage
-
-A simple usage example:
+## 使用
 
 ```dart
-import 'package:netease_music_request/netease_music_request.dart';
 
-main() {
-  var awesome = new Awesome();
+import 'package:netease_music_request/request.dart';
+
+void main() {
+  var phone = '';
+  var password = '';
+  User().loginByPhone(phone, password).then((data) => print(data));
 }
 ```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme

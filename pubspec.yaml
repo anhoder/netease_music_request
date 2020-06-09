@@ -1,7 +1,7 @@
 name: netease_music_request
-description: A starting point for Dart libraries or applications.
-# version: 1.0.0
-# homepage: https://www.example.com
+description: Dart版网易云音乐，使用Dio发起请求，CookieJar处理Cookie数据
+version: 1.0.0
+homepage: https://github.com/AlanAlbert
 
 environment:
   sdk: '>=2.7.0 <3.0.0'
