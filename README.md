@@ -1,6 +1,12 @@
-Dart版网易云音乐接口，使用Dio进行请求，CookieJar管理Cookie数据
+# Dart版网易云音乐接口
 
-> 接口来源于 [Binaryify/NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)，其接口文档为[https://binaryify.github.io/NeteaseCloudMusicApi](https://binaryify.github.io/NeteaseCloudMusicApi)
+使用Dio发起请求，CookieJar管理Cookie，可用于命令行程序、Flutter程序。
+
+> 接口逻辑来源于 [Binaryify/NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
+> 
+> 其接口文档为[https://binaryify.github.io/NeteaseCloudMusicApi](https://binaryify.github.io/NeteaseCloudMusicApi)
+
+本项目使用Dart实现其接口逻辑，并在其基础上使用CookieJar管理Cookie信息
 
 ## 使用
 
