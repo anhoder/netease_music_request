@@ -1,9 +1,9 @@
 # Dart版网易云音乐接口
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AlanAlbert/netease-music-request)
-![GitHub](https://img.shields.io/github/license/AlanAlbert/netease-music-request)
 ![Last Tag](https://badgen.net/github/tag/AlanAlbert/netease-music-request)
 ![GitHub last commit](https://badgen.net/github/last-commit/AlanAlbert/netease-music-request)
+![GitHub](https://img.shields.io/github/license/AlanAlbert/netease-music-request)
 
 ![Support](https://badgen.net/pub/dart-platform/netease_music_request)
 ![Pub Version](https://img.shields.io/pub/v/netease_music_request)
