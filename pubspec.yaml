@@ -1,6 +1,6 @@
 name: netease_music_request
 description: Dart版网易云音乐，使用Dio发起请求，CookieJar管理Cookie信息
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/AlanAlbert
 
 environment:
