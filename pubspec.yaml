@@ -7,13 +7,13 @@ environment:
   sdk: '>=2.7.0 <3.0.0'
 
 dependencies:
-  dio: ^3.0.9
-  steel_crypt: ^2.0.0
-  crypton: ^1.0.8
-  dio_cookie_manager: ^1.0.0
-  cookie_jar: ^1.0.1
-  convert: ^2.1.1
-  crypto: ^2.1.5
+  dio: 3.0.9
+  steel_crypt: 2.0.0
+  crypton: 1.0.8
+  dio_cookie_manager: 1.0.0
+  cookie_jar: 1.0.1
+  convert: 2.1.1
+  crypto: 2.1.5
 
 dev_dependencies:
   pedantic: ^1.8.0
