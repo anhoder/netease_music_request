@@ -27,6 +27,7 @@ abstract class Request {
   static Dio dio;
   static PersistCookieJar cookieJar;
   static CookieManager cookieManager;
+  static String cookieDir;
 
   String BASE64_PRESET_KEY = base64.encode(utf8.encode(PRESET_KEY));
   String BASE64_IV = base64.encode(utf8.encode(IV));
@@ -34,8 +35,20 @@ abstract class Request {
   String BASE64_EAPI_KEY = base64.encode(utf8.encode(EAPI_KEY));
 
   Request() {
+    var env = Platform.environment;
+    if (cookieDir == null) {
+      if (Platform.isWindows) {
+        cookieDir = '${env['USERPROFILE'].toString()}${Platform.pathSeparator}.musicfox${Platform.pathSeparator}cookies';
+      } else {
+        cookieDir = '${env['HOME'].toString()}${Platform.pathSeparator}.musicfox${Platform.pathSeparator}cookies';
+      }
+    }
+    var directory = Directory(cookieDir);
+    if (!directory.existsSync()) {
+      directory.createSync(recursive: true);
+    }
     dio = Dio();
-    cookieJar = PersistCookieJar();
+    cookieJar = PersistCookieJar(dir: cookieDir);
     cookieManager = CookieManager(cookieJar);
     dio.interceptors.add(cookieManager);
   }

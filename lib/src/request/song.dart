@@ -45,7 +45,6 @@ class Song extends Request {
       'ids': songIds.toString(),
       'c': songIdMapList.toString()
     };
-    print(data);
 
     return request(METHOD.POST, 'https://music.163.com/weapi/v3/song/detail', data, {'crypto': CRYPTO.WEAPI}).then((response) => response.data);
   }

@@ -1,19 +1,19 @@
 name: netease_music_request
 description: Dart版网易云音乐，使用Dio发起请求，CookieJar管理Cookie信息
-version: 1.0.2
+version: 1.0.6
 homepage: https://github.com/AlanAlbert
 
 environment:
   sdk: '>=2.7.0 <3.0.0'
 
 dependencies:
-  dio: ^3.0.9
-  steel_crypt: ^2.0.0
-  crypton: ^1.0.8
-  dio_cookie_manager: ^1.0.0
-  cookie_jar: ^1.0.1
-  convert: ^2.1.1
-  crypto: ^2.1.5
+  dio: 3.0.9
+  steel_crypt: 2.0.0
+  crypton: 1.0.8
+  dio_cookie_manager: 1.0.0
+  cookie_jar: 1.0.1
+  convert: 2.1.1
+  crypto: 2.1.5
 
 dev_dependencies:
   pedantic: ^1.8.0
